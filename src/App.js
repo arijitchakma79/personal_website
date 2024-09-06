@@ -1,16 +1,21 @@
 import './App.css';
-
+import Navbar from './components/navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HomePage, ProjectsPage, ResumePage } from './pages';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello, World!
-        </p>
-      </header>
-    </div>
-  )
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/resume" element={<ResumePage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
