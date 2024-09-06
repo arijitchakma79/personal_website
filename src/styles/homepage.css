@@ -1,0 +1,128 @@
+/* Reset margins and paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* Homepage container with full viewport */
+  .homepage-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://media.giphy.com/media/vc0vReKfhmsYSzS9ua/giphy.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  /* Overlay for text */
+  .overlay {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Responsive box with padding */
+  .box {
+    padding: 2vw 4vw;
+    border: 2px solid white;
+    background-color: rgba(117, 72, 148, 0.8);
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 90vw;
+  }
+  
+  /* Text size adjustments for responsiveness */
+  .overlay h1 {
+    font-size: 5vw;
+    margin-bottom: 1rem;
+  }
+  
+  .overlay p {
+    font-size: 2.5vw;
+  }
+  
+  /* Additional content section */
+  .content-section {
+    width: 100%;
+    padding: 5vh 1px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  /* Left profile picture section (4 part ratio) */
+  .profile-section {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .profile-section img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 50%;
+  }
+  
+  /* Right bio section (6 part ratio) */
+  .bio-section {
+    flex: 6;
+    text-align: left;
+    font-size: 1.5vw;
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    word-wrap: break-word;
+  }
+  
+  /* Media query for smaller screens (tablets and phones) */
+  @media (max-width: 768px) {
+    .overlay h1 {
+      font-size: 7vw;
+    }
+  
+    .overlay p {
+      font-size: 4vw;
+    }
+  
+    .box {
+      padding: 3vw 5vw;
+    }
+  
+    .content-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-section, .bio-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .bio-section {
+      font-size: 3vw;
+    }
+  
+    .profile-section img {
+      max-width: 80%;
+    }
+  }
+  
