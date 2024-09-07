@@ -58,7 +58,7 @@ body, html {
     padding: 5vh 1px;
     background-color: white;
     font-family: Arial, sans-serif;
-    min-height: 100vh;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -125,4 +125,29 @@ body, html {
       max-width: 80%;
     }
   }
-  
+
+ /* Social links section styling */
+.social-links-section {
+  text-align: center;
+}
+
+.social-links-section p {
+  font-size: 1.5rem; 
+  color: #333;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+  margin-top: 15px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-links a:hover {
+  opacity: 0.8; 
+}
