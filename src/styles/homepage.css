@@ -53,45 +53,46 @@ body, html {
   }
   
   /* Additional content section */
-  .content-section {
-    width: 100%;
-    padding: 5vh 1px;
-    background-color: white;
-    font-family: Arial, sans-serif;
-    min-height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2vw;
-    flex-wrap: wrap;
-  }
-  
-  /* Left profile picture section (4 part ratio) */
-  .profile-section {
-    flex: 4;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  .profile-section img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    border-radius: 50%;
-  }
-  
-  /* Right bio section (6 part ratio) */
-  .bio-section {
-    flex: 6;
-    text-align: left;
-    font-size: 1.5vw;
-    max-width: 60vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    word-wrap: break-word;
-  }
+  /* Make sure the content-section flexbox aligns the items vertically */
+.content-section {
+  width: 100%;
+  padding: 5vh 10px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+/* Adjust profile section to center vertically */
+.profile-section {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.profile-section img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+/* Right bio section */
+.bio-section {
+  flex: 6;
+  text-align: left;
+  font-size: 1.5vw;
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center bio text vertically */
+}
+
   
   /* Media query for smaller screens (tablets and phones) */
   @media (max-width: 768px) {

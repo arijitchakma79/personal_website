@@ -4,6 +4,7 @@ import '../styles/homepage.css';
 import ProfileImage from '../assets/profile.jpg'; 
 import { LinkedIn, GitHub, Email, Instagram } from '@mui/icons-material'; // Import Material-UI icons
 import DevpostIcon from '../assets/devpost_logo.png'; // You can add a custom icon if there's no MUI one for Devpost
+import Footer from '../components/footer';
 
 const HomePage = () => {
   return (
@@ -65,6 +66,9 @@ const HomePage = () => {
             <img src={DevpostIcon} alt="Devpost" style={{ width: '40px', height: '40px' }} />
           </a>
         </div>
+      </div>
+      <div className='footer'>
+        <Footer />
       </div>
     </div>
   );
