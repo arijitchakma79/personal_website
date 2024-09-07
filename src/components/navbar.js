@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Typography, Box, Tab, Tabs, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close'; // Import Close icon
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -40,16 +41,66 @@ const Navbar = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
 
   const drawer = (
-    <Drawer anchor="right" open={drawerOpen} onClose={() => toggleDrawer(false)}>
+    <Drawer
+      anchor="right"
+      open={drawerOpen}
+      onClose={() => toggleDrawer(false)}
+      PaperProps={{
+        sx: {
+          backgroundColor: '#e0bbf0', // Light violet background color for the drawer
+          border: '2px solid #a3a3c2', // Light border color around the drawer
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Slight shadow for depth
+          borderRadius: '10px', // Rounded corners
+        },
+      }}
+    >
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems:'center' }}>
+        {/* Close button */}
+        <IconButton onClick={() => toggleDrawer(false)}>
+          <CloseIcon />
+        </IconButton>
+      </Box>
       <List>
-        <ListItem button onClick={() => { setActiveTab(0); navigate('/'); toggleDrawer(false); }}>
-          <ListItemText primary="Home" />
+        <ListItem
+          button
+          onClick={() => {
+            setActiveTab(0);
+            navigate('/');
+            toggleDrawer(false);
+          }}
+          sx={{
+            '&:hover': { backgroundColor: '#c1a4d7' }, // Hover effect
+            borderBottom: '1px solid #a3a3c2', // Divider between each item
+          }}
+        >
+          <ListItemText primary="Home" sx={{ color: '#3f3f3f', fontWeight: 'bold' }} />
         </ListItem>
-        <ListItem button onClick={() => { setActiveTab(1); navigate('/projects'); toggleDrawer(false); }}>
-          <ListItemText primary="Projects" />
+        <ListItem
+          button
+          onClick={() => {
+            setActiveTab(1);
+            navigate('/projects');
+            toggleDrawer(false);
+          }}
+          sx={{
+            '&:hover': { backgroundColor: '#c1a4d7' }, // Hover effect
+            borderBottom: '1px solid #a3a3c2', // Divider between each item
+          }}
+        >
+          <ListItemText primary="Projects" sx={{ color: '#3f3f3f', fontWeight: 'bold' }} />
         </ListItem>
-        <ListItem button onClick={() => { setActiveTab(2); navigate('/resume'); toggleDrawer(false); }}>
-          <ListItemText primary="Resume" />
+        <ListItem
+          button
+          onClick={() => {
+            setActiveTab(2);
+            navigate('/resume');
+            toggleDrawer(false);
+          }}
+          sx={{
+            '&:hover': { backgroundColor: '#c1a4d7' }, // Hover effect
+          }}
+        >
+          <ListItemText primary="Resume" sx={{ color: '#3f3f3f', fontWeight: 'bold' }} />
         </ListItem>
       </List>
     </Drawer>
@@ -63,8 +114,15 @@ const Navbar = () => {
           <Typography
             variant="h5"
             component="div"
-            sx={{ color: 'white', cursor: 'pointer' }}
-            onClick={() => { navigate('/'); setActiveTab(0); }} // Navigate to HomePage on logo click
+            sx={{
+              color: 'white',
+              cursor: 'pointer',
+              fontSize: isMobile ? '1.2rem' : '1.5rem', // Adjust font size based on screen size
+            }}
+            onClick={() => {
+              navigate('/');
+              setActiveTab(0);
+            }} // Navigate to HomePage on logo click
           >
             Arijit Chakma
           </Typography>

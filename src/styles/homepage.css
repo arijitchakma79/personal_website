@@ -103,7 +103,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     text-align: center; /* Center-aligns the text on smaller screens */
-    padding: 2px 5px; /* Adds some padding to give the section breathing space */
+    padding: 5vh 5px; /* Adds some padding to give the section breathing space */
   }
 
   .profile-section,
