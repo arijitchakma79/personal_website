@@ -35,33 +35,41 @@ body, html {
   background-color: rgba(117, 72, 148, 0.8);
   border-radius: 10px;
   display: inline-block;
-  width: 90vw; /* Width for larger screens */
+  width: 40vw;
   max-width: 90vw;
   text-align: center;
+}
+
+.overlay h1 {
+  font-size: 5vw;
+}
+
+.overlay p {
+  font-size: 2vw;
 }
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
   .box {
-    width: 100vw; /* Force full width */
-    max-width: 100vw; /* Ensure max width is also 100% */
-    padding: 5vw; /* Adjust padding for small screens */
-    box-sizing: border-box; /* Include padding in the width */
-    border-radius: 0px; /* Remove rounded corners to fit full width */
+    width: 100vw;
+    max-width: 100vw;
+    padding: 5vw;
+    box-sizing: border-box;
+    border-radius: 0px;
   }
 
   .overlay {
     left: 50%;
-    top: 40%; /* Adjust vertical position */
+    top: 40%;
     transform: translate(-50%, -40%);
   }
 
   .overlay h1 {
-    font-size: 10vw; /* Adjust font size for title */
+    font-size: 10vw;
   }
 
   .overlay p {
-    font-size: 6vw; /* Adjust font size for paragraph */
+    font-size: 6vw;
   }
 }
 
@@ -73,7 +81,7 @@ body, html {
   min-height: 100px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center; /* Center content vertically */
   gap: 2vw;
   flex-wrap: wrap;
 }
@@ -83,6 +91,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%; /* Ensure the profile section takes full height */
 }
 
 .profile-section img {
@@ -142,7 +151,7 @@ body, html {
 .social-links-section p {
   font-size: 1.3rem;
   color: #333;
-  margin: 0 0 10px; /* Add bottom margin to separate text from icons */
+  margin: 0 0 10px;
 }
 
 .social-links {
@@ -150,7 +159,7 @@ body, html {
   justify-content: center;
   gap: 20px;
   margin-top: 15px;
-  flex-wrap: wrap; /* Wrap the icons to a new line if they don't fit */
+  flex-wrap: wrap;
 }
 
 .social-links a {
@@ -171,25 +180,25 @@ body, html {
 /* Adjusting icon sizes for smaller screens */
 @media (max-width: 768px) {
   .social-links a svg {
-    font-size: 30px; /* Smaller size for the icons */
+    font-size: 30px;
   }
   .social-links img {
     width: 30px;
-    height: 30px; /* Resize custom Devpost icon */
+    height: 30px;
   }
 }
 
 /* Media query for very small screens (phones) */
 @media (max-width: 576px) {
   .social-links a svg {
-    font-size: 25px; /* Even smaller size for very small screens */
+    font-size: 25px;
   }
   .social-links img {
     width: 25px;
-    height: 25px; /* Resize custom Devpost icon for very small screens */
+    height: 25px;
   }
 
   .social-links-section p {
-    font-size: 1rem; /* Smaller font size for very small screens */
+    font-size: 1rem;
   }
 }
