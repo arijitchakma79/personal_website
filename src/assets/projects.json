@@ -1,51 +1,14 @@
 [
     {
-      "name": "AI Model for Image Classification",
-      "date": "August 2023",
-      "link": "https://github.com/your-repo",
-      "description": "Developed an AI model using convolutional neural networks to classify images into multiple categories.",
-      "image": "/path-to-image1.jpg",
-      "skills": ["Python", "TensorFlow", "OpenCV"]
+      "name": "Visual-ED (DragonHacks 2024 Winner)",
+      "link": "https://devpost.com/software/visual-ed",
+      "description": "Visual-Ed is an interactive platform that helps individuals with mobility disabilities communicate and participate in classroom or conference settings using eye movement detection. It enables users to navigate a graphical interface, answer questions, and have their responses converted into speech for real-time interaction.",
+      "image": "./visual_ed.jpg"
     },
     {
-      "name": "E-commerce Website",
-      "date": "June 2023",
+      "name": "Scout (HoyaHacks 2024)",
       "link": "https://your-ecommerce.com",
-      "description": "Built a full-stack e-commerce application using React, Node.js, and MongoDB with features like product listing, shopping cart, and checkout.",
-      "image": "/path-to-image2.jpg",
-      "skills": ["React", "Node.js", "MongoDB"]
-    },
-    {
-      "name": "Portfolio Website",
-      "date": "January 2023",
-      "link": "https://your-portfolio.com",
-      "description": "Created a responsive portfolio website using React and CSS to showcase my projects, skills, and resume.",
-      "image": "/path-to-image3.jpg",
-      "skills": ["React", "CSS"]
-    },
-    {
-      "name": "Weather App",
-      "date": "May 2023",
-      "link": "https://github.com/weather-app",
-      "description": "Built a weather app using React and OpenWeather API to display real-time weather data.",
-      "image": "/path-to-image4.jpg",
-      "skills": ["React", "API", "JavaScript"]
-    },
-    {
-      "name": "Task Manager",
-      "date": "March 2023",
-      "link": "https://your-taskmanager.com",
-      "description": "Developed a task manager application using React and Firebase for real-time task creation, editing, and deletion.",
-      "image": "/path-to-image5.jpg",
-      "skills": ["React", "Firebase", "JavaScript"]
-    },
-    {
-      "name": "Chat Application",
-      "date": "February 2023",
-      "link": "https://your-chatapp.com",
-      "description": "Built a real-time chat application using WebSockets, Node.js, and React, allowing users to create rooms and chat in real-time.",
-      "image": "/path-to-image6.jpg",
-      "skills": ["Node.js", "React", "WebSockets"]
+      "description": "Scout is an affordable autonomous robot designed to enhance campus security by navigating the campus, detecting obstacles, and responding to the keyword 'help'. It sends location data to an app, providing real-time updates to support security teams and amplify their effectiveness.",
+      "image": "./scout.png"
     }
-  ]
-  
+]
