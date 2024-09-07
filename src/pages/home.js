@@ -24,15 +24,20 @@ const HomePage = () => {
 
         {/* Right section for bio */}
         <div className="bio-section">
-          <h2>About Me</h2>
+          <h2>Hi There</h2>
           <p>
-            Hi, I'm Arijit Chakma, a passionate software engineer with a love for building scalable
-            and efficient software solutions. I have experience in various programming languages
-            and enjoy solving complex problems.
+             My name is Arijit Chakma. I am a current third year student Computer Science student at Drexel University. I am passionate about building softwares, AI /ML 
+             and Computer Vision and the underlying Mathematics behind those models. For fun, I love going to Gym, eating Ramen, and listening to Audiobooks and Spotify.
           </p>
           <p>
-            When I'm not coding, you can find me exploring new technologies, reading, or engaging
-            in outdoor activities.
+            Currently, I am :
+            <ul>
+              <li>Looking for a Co-op/Internship for Spring/Summer 2025</li>
+              <li>Looking for AI/ML Resarch Projects (Volunteer/Paid)</li>
+              <li>Learning about AI/ML and Computer Vision</li>
+              <li>Attending Hackathons</li>
+              <li>Building cool projects</li>
+            </ul>
           </p>
         </div>
       </div>
