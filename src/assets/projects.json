@@ -10,5 +10,17 @@
       "link": "https://your-ecommerce.com",
       "description": "Scout is an affordable autonomous robot designed to enhance campus security by navigating the campus, detecting obstacles, and responding to the keyword 'help'. It sends location data to an app, providing real-time updates to support security teams and amplify their effectiveness.",
       "image": "./scout.png"
+    },
+    {
+        "name": "ThriftHub",
+        "link": "https://github.com/arijitchakma79/ThriftHub",
+        "description": "ThriftHub is a personal finance tracker developed using the MERN stack and Firebase for user authentication, offering seamless data exchange between the frontend and backend. It provides users with a comprehensive financial management experience through a dashboard that tracks income, expenses, and balance trends, with visual graphs for efficient tracking and decision-making.",
+        "image": "./thriftHub.png"
+    },
+    {
+        "name": "SE210 Final Project",
+        "link": "https://github.com/arijitchakma79/Banking_System",
+        "description": "Banking Software using Java for SE210 Final Project.",
+        "image": "./se210.jpg"
     }
 ]
