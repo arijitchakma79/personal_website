@@ -63,7 +63,7 @@ const HomePage = () => {
             <Instagram sx={{ fontSize: 40, color: '#C13584' }} />
           </a>
           <a href="https://devpost.com/arijitchakma79?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" rel="noopener noreferrer">
-            <img src={DevpostIcon} alt="Devpost" style={{ width: '40px', height: '40px' }} />
+            <img src={DevpostIcon} alt="Devpost" className='devpost-img' />
           </a>
         </div>
       </div>

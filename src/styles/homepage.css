@@ -1,4 +1,3 @@
-/* General Text and Layout Fixes */
 body, html {
   margin: 0;
   padding: 0;
@@ -36,26 +35,45 @@ body, html {
   background-color: rgba(117, 72, 148, 0.8);
   border-radius: 10px;
   display: inline-block;
+  width: 90vw; /* Width for larger screens */
   max-width: 90vw;
+  text-align: center;
 }
 
-.overlay h1 {
-  font-size: 3vw;
-}
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .box {
+    width: 100vw; /* Force full width */
+    max-width: 100vw; /* Ensure max width is also 100% */
+    padding: 5vw; /* Adjust padding for small screens */
+    box-sizing: border-box; /* Include padding in the width */
+    border-radius: 0px; /* Remove rounded corners to fit full width */
+  }
 
-.overlay p {
-  font-size: 2.5vw;
+  .overlay {
+    left: 50%;
+    top: 40%; /* Adjust vertical position */
+    transform: translate(-50%, -40%);
+  }
+
+  .overlay h1 {
+    font-size: 10vw; /* Adjust font size for title */
+  }
+
+  .overlay p {
+    font-size: 6vw; /* Adjust font size for paragraph */
+  }
 }
 
 .content-section {
   width: 100%;
-  padding: 1px 10px;
+  padding: 5vh 10px;
   background-color: white;
   font-family: Arial, sans-serif;
-  min-height: 100vh;
+  min-height: 100px;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center content vertically */
+  align-items: flex-start;
   gap: 2vw;
   flex-wrap: wrap;
 }
@@ -63,9 +81,8 @@ body, html {
 .profile-section {
   flex: 4;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100%; /* Ensures it takes up the full height for vertical centering */
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-section img {
@@ -87,23 +104,11 @@ body, html {
 
 /* Media query for smaller screens (tablets and phones) */
 @media (max-width: 768px) {
-  .overlay h1 {
-    font-size: 7vw;
-  }
-
-  .overlay p {
-    font-size: 4vw;
-  }
-
-  .box {
-    padding: 3vw 5vw;
-  }
-
   .content-section {
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Center-aligns the text on smaller screens */
-    padding: 5vh 5px; /* Adds some padding to give the section breathing space */
+    text-align: center;
+    padding: 2vh 10px;
   }
 
   .profile-section,
@@ -112,25 +117,26 @@ body, html {
   }
 
   .bio-section {
-    font-size: 4vw; /* Increase font size for smaller screens */
-    max-width: 90vw; /* Ensure bio text doesn't extend too wide */
-    margin: 0 auto; /* Center the bio text */
+    font-size: 5vw;
+    max-width: 90vw;
+    margin: 0 auto;
   }
 
   .profile-section img {
-    max-width: 70%; /* Shrink the image for smaller screens */
+    max-width: 70%;
+    margin-bottom: 20px;
   }
 
   .bio-section ul {
-    padding-left: 1rem; /* Align bullet points properly */
-    text-align: left; /* Align the bullet points to the left even on small screens */
+    padding-left: 1rem;
+    text-align: left;
   }
 }
 
 /* Social links section styling */
 .social-links-section {
   text-align: center;
-
+  padding: 20px;
 }
 
 .social-links-section p {
@@ -152,32 +158,38 @@ body, html {
   color: inherit;
 }
 
+.social-links img {
+  width: 40px;
+  height: 40px;
+  transition: opacity 0.3s;
+}
+
 .social-links a:hover {
   opacity: 0.8;
 }
 
-/* Media query for smaller screens (tablets and phones) */
+/* Adjusting icon sizes for smaller screens */
 @media (max-width: 768px) {
-  .social-links-section p {
-    font-size: 1.2rem; /* Smaller font size for the text */
+  .social-links a svg {
+    font-size: 30px; /* Smaller size for the icons */
   }
-
-  .social-links {
-    gap: 15px; /* Decrease the gap between icons on smaller screens */
-  }
-
-  .social-links a {
-    font-size: 1.3rem; /* Ensure the icons scale down as well */
+  .social-links img {
+    width: 30px;
+    height: 30px; /* Resize custom Devpost icon */
   }
 }
 
 /* Media query for very small screens (phones) */
 @media (max-width: 576px) {
-  .social-links-section p {
-    font-size: 0.8rem; /* Even smaller font size for very small screens */
+  .social-links a svg {
+    font-size: 25px; /* Even smaller size for very small screens */
+  }
+  .social-links img {
+    width: 25px;
+    height: 25px; /* Resize custom Devpost icon for very small screens */
   }
 
-  .social-links a {
-    font-size: 0.8rem; /* Increase size for better touchability on small devices */
+  .social-links-section p {
+    font-size: 1rem; /* Smaller font size for very small screens */
   }
 }
