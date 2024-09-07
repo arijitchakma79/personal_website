@@ -1,19 +1,56 @@
-// src/pages/HomePage.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/homepage.css';
 import ProfileImage from '../assets/profile.jpg'; 
-import { LinkedIn, GitHub, Email, Instagram } from '@mui/icons-material'; // Import Material-UI icons
-import DevpostIcon from '../assets/devpost_logo.png'; // You can add a custom icon if there's no MUI one for Devpost
+import { LinkedIn, GitHub, Email, Instagram } from '@mui/icons-material'; 
+import DevpostIcon from '../assets/devpost_logo.png'; 
 import Footer from '../components/footer';
 
+const phrases = [
+  'Software Engineer',
+  'Wannabe ML Engineer/Researcher',
+  'Prev SWE @BMS',
+  'Hackathon Competitor'
+];
+
 const HomePage = () => {
+  const [currentText, setCurrentText] = useState('');
+  const [index, setIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  // Typewriter effect logic
+  useEffect(() => {
+    const handleTyping = () => {
+      const fullText = phrases[loopNum % phrases.length];
+      setCurrentText(
+        isDeleting
+          ? fullText.substring(0, currentText.length - 1)
+          : fullText.substring(0, currentText.length + 1)
+      );
+
+      setTypingSpeed(isDeleting ? 50 : 150);
+
+      if (!isDeleting && currentText === fullText) {
+        setTimeout(() => setIsDeleting(true), 1000);
+      } else if (isDeleting && currentText === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+      }
+    };
+
+    const typingInterval = setTimeout(handleTyping, typingSpeed);
+
+    return () => clearTimeout(typingInterval);
+  }, [currentText, isDeleting, loopNum, typingSpeed]);
+
   return (
     <div>
       <div className="homepage-container">
         <div className="overlay">
           <div className="box">
             <h1>Arijit Chakma</h1>
-            <p>Loves Building Softwares</p>
+            <p>{currentText}</p> 
           </div>
         </div>
       </div>
