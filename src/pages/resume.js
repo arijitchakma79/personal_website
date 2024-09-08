@@ -5,6 +5,7 @@ import BMSLogo from '../assets/resume/bms_logo.png';
 import DGFLogo from '../assets/resume/dfg.png';
 import DrexelAILogo from '../assets/resume/drexel_ai_logo.png';
 import Resume from '../assets/resume/resume.pdf';
+
 const ResumePage = () => {
   return (
     <div className="resume-container">
@@ -26,6 +27,13 @@ const ResumePage = () => {
             <h3>Drexel University</h3>
             <p>BSc in Computer Science | 2027</p>
             <p>Minor in Mathematics</p>
+            <div className="concentration-section">
+              <p className="concentration-title">Concentration:</p>
+              <ul className="concentration-list">
+                <li>Artificial Intelligence & Machine Learning</li>
+                <li>Algorithms & Theory</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

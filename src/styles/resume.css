@@ -22,6 +22,30 @@
   transition: background-color 0.3s;
 }
 
+/* Concentration Section */
+.concentration-section {
+  margin-top: 15px;
+}
+
+.concentration-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.concentration-list {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.concentration-list li {
+  margin: 5px 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #555;
+}
+
 .download-button:hover {
   background-color: #45a049;
 }
