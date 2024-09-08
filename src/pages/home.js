@@ -7,8 +7,8 @@ import Footer from '../components/footer';
 
 const phrases = [
   'Software Engineer',
-  'Wannabe ML Engineer/Researcher',
-  'Prev SWE @BMS',
+  'Aspiring ML Engineer/Researcher',
+  'Prev SWE @Bristol Myers Squibb',
   'Hackathon Competitor'
 ];
 
