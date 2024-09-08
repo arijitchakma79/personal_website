@@ -15,7 +15,7 @@ const Navbar = () => {
   const handleTabChange = (event, newValue) => {
     setActiveTab(newValue);
     if (newValue === 0) {
-      navigate('/home'); // Navigate to HomePage
+      navigate('/'); // Navigate to HomePage
     } else if (newValue === 1) {
       navigate('/projects'); // Navigate to ProjectsPage
     } else if (newValue === 2) {
@@ -25,7 +25,7 @@ const Navbar = () => {
 
   // Set active tab based on current route when the component mounts or when location changes
   useEffect(() => {
-    if (location.pathname === '/home') {
+    if (location.pathname === '/') {
       setActiveTab(0); // Set HomePage as active
     } else if (location.pathname === '/projects') {
       setActiveTab(1); // Set ProjectsPage as active
@@ -65,7 +65,7 @@ const Navbar = () => {
           button
           onClick={() => {
             setActiveTab(0);
-            navigate('/home');
+            navigate('/');
             toggleDrawer(false);
           }}
           sx={{
@@ -124,7 +124,7 @@ const Navbar = () => {
               fontSize: isMobile ? '1.2rem' : '1.5rem', // Adjust font size based on screen size
             }}
             onClick={() => {
-              navigate('/home');
+              navigate('/');
               setActiveTab(0);
             }} // Navigate to HomePage on logo click
           >
