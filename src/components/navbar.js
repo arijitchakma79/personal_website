@@ -25,7 +25,7 @@ const Navbar = () => {
 
   // Set active tab based on current route when the component mounts or when location changes
   useEffect(() => {
-    if (location.pathname === '/') {
+    if (location.pathname === '/home') {
       setActiveTab(0); // Set HomePage as active
     } else if (location.pathname === '/projects') {
       setActiveTab(1); // Set ProjectsPage as active
@@ -65,7 +65,7 @@ const Navbar = () => {
           button
           onClick={() => {
             setActiveTab(0);
-            navigate('/');
+            navigate('/home');
             toggleDrawer(false);
           }}
           sx={{
