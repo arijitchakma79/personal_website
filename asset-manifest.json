@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24d6c2cd.css",
+    "main.js": "/static/js/main.d4d65b7b.js",
+    "static/media/dfg.png": "/static/media/dfg.187ba1f26bb14f9a7aab.png",
+    "static/media/resume.pdf": "/static/media/resume.dc6e686b65805df0e63e.pdf",
+    "static/media/profile.jpg": "/static/media/profile.0f389e5ad4ce12389f62.jpg",
+    "static/media/drexel_logo.png": "/static/media/drexel_logo.9db47af4ef3d6e584614.png",
+    "static/media/drexel_ai_logo.png": "/static/media/drexel_ai_logo.df38d7f05379ef2195b0.png",
+    "static/media/bms_logo.png": "/static/media/bms_logo.e1414c8b04d4b8e57d1a.png",
+    "index.html": "/index.html",
+    "main.24d6c2cd.css.map": "/static/css/main.24d6c2cd.css.map",
+    "main.d4d65b7b.js.map": "/static/js/main.d4d65b7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24d6c2cd.css",
+    "static/js/main.d4d65b7b.js"
+  ]
+}
