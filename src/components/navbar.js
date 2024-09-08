@@ -15,7 +15,7 @@ const Navbar = () => {
   const handleTabChange = (event, newValue) => {
     setActiveTab(newValue);
     if (newValue === 0) {
-      navigate('/'); // Navigate to HomePage
+      navigate('/home'); // Navigate to HomePage
     } else if (newValue === 1) {
       navigate('/projects'); // Navigate to ProjectsPage
     } else if (newValue === 2) {
@@ -124,7 +124,7 @@ const Navbar = () => {
               fontSize: isMobile ? '1.2rem' : '1.5rem', // Adjust font size based on screen size
             }}
             onClick={() => {
-              navigate('/');
+              navigate('/home');
               setActiveTab(0);
             }} // Navigate to HomePage on logo click
           >
