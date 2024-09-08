@@ -4,7 +4,7 @@ import DrexelLogo from '../assets/resume/drexel_logo.png';
 import BMSLogo from '../assets/resume/bms_logo.png';
 import DGFLogo from '../assets/resume/dfg.png';
 import DrexelAILogo from '../assets/resume/drexel_ai_logo.png';
-
+import Resume from '../assets/resume/resume.pdf';
 const ResumePage = () => {
   return (
     <div className="resume-container">
@@ -12,7 +12,7 @@ const ResumePage = () => {
 
       {/* Download Resume Button */}
       <div className="download-button-container">
-        <a href="/resume.pdf" download className="download-button">
+        <a href={Resume} download className="download-button">
           Download Resume
         </a>
       </div>
