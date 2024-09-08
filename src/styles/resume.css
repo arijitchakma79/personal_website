@@ -1,205 +1,258 @@
-/* Container */
-.resume-container {
-  width: 70%;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
 }
 
+/* Resume Container */
+.resume-container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Download Button */
 .download-button-container {
-  margin-bottom: 80px;
-  text-align: left; 
+  margin-bottom: 40px;
+  text-align: left;
 }
 
 .download-button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #25825b;
+  padding: 12px 25px;
+  background-color: #00796b;
   color: white;
-  font-size: 1rem;
-  border-radius: 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+  background-color: #5e3283;
+  transform: translateY(-2px);
+}
+
+/* Section Title Styling */
+.resume-title {
+  text-align: left;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00796b;
+  border-bottom: 2px solid #00796b;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Education & Experience Layout */
+.education-section, .experience-section {
+  margin-bottom: 50px;
+}
+
+.education-section, .experience-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.institution-logo, .experience-logo {
+  width: 200px;
+  height: auto;
+  margin-left: 80px;
+  margin-right: 200px;
+}
+
+/* Align details to the left inside a wrapper */
+.details-wrapper {
+  width: 100%;
+}
+
+.education-details, .experience-details {
+  flex: 1;
+  text-align: left;
+}
+
+/* Ensure same font size and weight across all sections */
+.education-details h3, .experience-details h3, .concentration-section h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Standardize font for all paragraph elements */
+.education-details p, .experience-details p, .concentration-section p, .concentration-list li {
+  margin: 8px 0;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 400; /* Ensure weight consistency */
 }
 
 /* Concentration Section */
 .concentration-section {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .concentration-title {
   font-weight: bold;
-  font-size: 1.1rem;
-  color: #000000;
-  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #00796b;
 }
 
 .concentration-list {
   margin: 0;
   padding-left: 20px;
   list-style-type: disc;
-}
-
-.concentration-list li {
-  margin: 5px 0;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1.2rem; /* Same font size as details */
   color: #555;
 }
 
-.download-button:hover {
-  background-color: #45a049;
-}
-
-/* Title Styling */
-.resume-title {
-  text-align: left;
-  font-size: clamp(2rem, 5vw, 3rem);
-  margin-bottom: 40px;
-  color: #333;
-}
-
-/* Section Styling */
-.section {
-  margin-bottom: 40px;
-}
-
-.section-title {
-  font-size: clamp(1.5rem, 4vw, 2rem); 
-  margin-bottom: 20px;
-  color: #333;
-  text-align: left;
-}
-
-/* Education Layout */
-.education-section {
+/* Skills Section */
+.skills-section {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  text-align: left; /* Ensure the text within the skills section is left-aligned */
 }
 
-.institution-logo {
-  width: clamp(150px, 20vw, 250px); 
-  height: auto;
-  margin-left: 50px;
-  margin-right: 200px;
-  margin-top: 20px;
-}
-
-.education-details {
+.skill-category {
   flex: 1;
-  text-align: left;
+  min-width: 250px;
+  text-align: left; /* Ensure the category title is left-aligned */
 }
 
-.education-details h3 {
-  margin: 0;
-  font-size: clamp(1.5rem, 3.5vw, 2rem); 
-  font-weight: bold;
+.skill-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #00796b;
+  text-transform: uppercase;
+  border-bottom: 1px solid #00796b;
+  padding-bottom: 8px;
+  text-align: left; /* Left-align the category title */
 }
 
-.education-details p {
-  margin: 5px 0;
-  font-size: clamp(1rem, 2.5vw, 1.3rem); 
-  color: #555;
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left; /* Left-align the entire list */
 }
 
-/* Experience Section Styling */
-.experience-section {
-  margin-top: 20px;
+.skill-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+  position: relative;
+  padding-left: 20px;
+  text-align: left; /* Ensure each list item is left-aligned */
 }
 
-.experience-item {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+.skill-list li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #00796b;
+  font-size: 1.5rem;
 }
 
-.experience-logo {
-  width: clamp(100px, 15vw, 150px); 
-  height: auto;
-  margin-left: 50px;
-  margin-right: 250px;
-  margin-top: 20px;
-}
-
-.experience-details {
-  flex: 1;
-  text-align: left;
-}
-
-.experience-details h3 {
-  margin: 0;
-  font-size: clamp(1.2rem, 3vw, 1.5rem); 
-  font-weight: bold;
-}
-
-.experience-details p {
-  margin: 5px 0;
-  font-size: clamp(0.9rem, 2vw, 1rem); 
-  color: #555;
-}
-
-/* Responsive Design */
+/* Responsive Design for Medium Screens (768px and below) */
 @media (max-width: 768px) {
   .resume-container {
+    width: 90%;
+  }
+
+  .institution-logo, .experience-logo {
+    width: 120px;
+  }
+
+  .skills-section {
+    flex-direction: column;
+  }
+
+  .download-button {
+    font-size: 1rem;
+  }
+
+  .resume-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .education-details h3, .experience-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .education-details p, .experience-details p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Design for Small Screens (576px and below) */
+@media (max-width: 576px) {
+  .resume-container {
     width: 95%;
+    margin: 0;
   }
 
-  .institution-logo {
-    width: clamp(80px, 20vw, 120px); 
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 10px;
+  .resume-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
   }
 
-  .experience-logo {
-    width: clamp(60px, 15vw, 100px); 
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 10px;
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
   }
 
-  .education-section,
-  .experience-item {
-    display: block;
-    text-align: center; 
-  }
-
-  .education-details,
-  .experience-details {
-    text-align: center;
+  .institution-logo, .experience-logo {
+    width: 100px;
     margin-bottom: 20px;
   }
 
-  .education-details h3, 
-  .experience-details h3 {
-    font-size: clamp(1rem, 3vw, 1.5rem); 
+  .education-section, .experience-item {
+    display: block;
+    text-align: center;
   }
 
-  .education-details p, 
-  .experience-details p {
-    font-size: clamp(0.8rem, 2vw, 1rem);
-  }
-}
-
-@media (max-width: 576px) {
-  .resume-container {
-    width: 100%;
+  .education-details, .experience-details {
+    text-align: center;
   }
 
-  .institution-logo,
-  .experience-logo {
-    width: clamp(50px, 15vw, 80px); 
+  .education-details h3, .experience-details h3 {
+    font-size: 1.2rem;
   }
 
-  .education-details h3,
-  .experience-details h3 {
-    font-size: clamp(0.9rem, 2.5vw, 1.2rem); 
+  .education-details p, .experience-details p {
+    font-size: 0.9rem;
   }
 
-  .education-details p,
-  .experience-details p {
-    font-size: clamp(0.8rem, 2vw, 0.9rem); 
+  .skills-section {
+    flex-direction: column;
+  }
+
+  .skill-category h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-list li {
+    font-size: 0.9rem;
   }
 }

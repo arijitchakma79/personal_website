@@ -2,6 +2,7 @@ import React from "react";
 import ProjectBox from '../components/projectBox'; 
 import '../styles/project.css'; 
 import projectsData from '../assets/projects.json'
+import Footer from "../components/footer";
 
 
 const ProjectsPage = () => {
@@ -20,6 +21,7 @@ const ProjectsPage = () => {
             />
           ))}
         </div>
+        <Footer />
       </div>
     );
   };

@@ -47,7 +47,7 @@ const Navbar = () => {
       onClose={() => toggleDrawer(false)}
       PaperProps={{
         sx: {
-          backgroundColor: '#e0bbf0', // Light violet background color for the drawer
+          backgroundColor: '#9181b6', // Light violet background color for the drawer
           border: '2px solid #a3a3c2', // Light border color around the drawer
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Slight shadow for depth
           borderRadius: '10px', // Rounded corners
@@ -108,7 +108,11 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position="static" sx={{ backgroundColor: '#a3a3c2' }}>
+      <AppBar position="static" sx={{
+          background: 'linear-gradient(135deg, #5a6283, #3283a8, #32a85a)', 
+          backgroundSize: '1000% 400%',
+          animation: 'gradientAnimation 15s ease infinite'
+        }}>
         <Toolbar>
           {/* Home Navigation */}
           <Typography
@@ -149,22 +153,22 @@ const Navbar = () => {
                 <Tab
                   label="Home"
                   sx={{
-                    color: activeTab === 0 ? 'black' : 'white',
-                    backgroundColor: activeTab === 0 ? '#E3F2FD' : 'inherit',
+                    color: activeTab === 0 ? 'white' : 'white',
+                    backgroundColor: activeTab === 0 ? '#9284ab' : 'inherit',
                   }}
                 />
                 <Tab
                   label="Projects"
                   sx={{
-                    color: activeTab === 1 ? 'black' : 'white',
-                    backgroundColor: activeTab === 1 ? '#E3F2FD' : 'inherit',
+                    color: activeTab === 1 ? 'white' : 'white',
+                    backgroundColor: activeTab === 1 ? '#9284ab' : 'inherit',
                   }}
                 />
                 <Tab
                   label="Resume"
                   sx={{
-                    color: activeTab === 2 ? 'black' : 'white',
-                    backgroundColor: activeTab === 2 ? '#E3F2FD' : 'inherit',
+                    color: activeTab === 2 ? 'white' : 'white',
+                    backgroundColor: activeTab === 2 ? '#9284ab' : 'inherit',
                   }}
                 />
               </Tabs>
