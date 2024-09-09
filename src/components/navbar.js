@@ -47,7 +47,7 @@ const Navbar = () => {
       onClose={() => toggleDrawer(false)}
       PaperProps={{
         sx: {
-          backgroundColor: '#9181b6', // Light violet background color for the drawer
+          backgroundColor: '#e5e5e5', // Light white background color for the drawer
           border: '2px solid #a3a3c2', // Light border color around the drawer
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Slight shadow for depth
           borderRadius: '10px', // Rounded corners
@@ -109,7 +109,7 @@ const Navbar = () => {
   return (
     <>
       <AppBar position="static" sx={{
-          background: 'linear-gradient(135deg, #5a6283, #3283a8, #32a85a)', 
+          background: 'linear-gradient(135deg, #4b397d, #EA33F5, #3e0adb)', 
           backgroundSize: '1000% 400%',
           animation: 'gradientAnimation 15s ease infinite'
         }}>

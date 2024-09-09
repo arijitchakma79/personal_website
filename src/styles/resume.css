@@ -27,7 +27,7 @@ body, html {
   display: inline-block;
   padding: 12px 25px;
   background-color: #00796b;
-  color: white;
+  color: #e5e5e5;
   font-size: 1.2rem;
   border-radius: 30px;
   text-decoration: none;
@@ -131,8 +131,8 @@ body, html {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  text-align: left; /* Ensure the text within the skills section is left-aligned */
-}
+  text-align: left; 
+ }
 
 .skill-category {
   flex: 1;
@@ -159,7 +159,7 @@ body, html {
 .skill-list li {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #1e1a29;
   position: relative;
   padding-left: 20px;
   text-align: left; /* Ensure each list item is left-aligned */
