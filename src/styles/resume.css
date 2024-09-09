@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Ensure consistent font family */
   background-color: #f4f4f4;
 }
 
@@ -85,6 +85,7 @@ body, html {
 .education-details, .experience-details {
   flex: 1;
   text-align: left;
+  font-family: 'Roboto', sans-serif; /* Ensure same font for all sections */
 }
 
 /* Ensure same font size and weight across all sections */
@@ -101,6 +102,7 @@ body, html {
   font-size: 1.2rem;
   color: #555;
   font-weight: 400; /* Ensure weight consistency */
+  font-family: 'Roboto', sans-serif; /* Ensure font consistency */
 }
 
 /* Concentration Section */
@@ -120,6 +122,7 @@ body, html {
   list-style-type: disc;
   font-size: 1.2rem; /* Same font size as details */
   color: #555;
+  font-family: 'Roboto', sans-serif; /* Ensure font consistency */
 }
 
 /* Skills Section */
@@ -233,15 +236,15 @@ body, html {
   }
 
   .education-details, .experience-details {
-    text-align: center;
+    text-align: left;
   }
 
   .education-details h3, .experience-details h3 {
     font-size: 1.2rem;
   }
 
-  .education-details p, .experience-details p {
-    font-size: 0.9rem;
+  .education-details p, .experience-details p  .concentration-section p, .concentration-list li {
+    font-size: 1rem;
   }
 
   .skills-section {
@@ -255,4 +258,6 @@ body, html {
   .skill-list li {
     font-size: 0.9rem;
   }
+
+
 }

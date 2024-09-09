@@ -99,15 +99,15 @@ const ResumePage = () => {
               <li>LangChain</li>
               <li>React</li>
               <li>React Native</li>
-              <li>Express JS</li>
+              <li>ExpressJs</li>
               <li>Flask</li>
               <li>MongoDB</li>
               <li>Git</li>
-              <li>PostgresSQL</li>
+              <li>PostgreSQL</li>
             </ul>
           </div>
           <div className="skill-category">
-            <h3>Tools & Libraries</h3>
+            <h3>ML Technologies</h3>
             <ul className="skill-list">
               <li>TensorFlow</li>
               <li>Numpy</li>
