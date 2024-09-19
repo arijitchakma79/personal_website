@@ -74,7 +74,7 @@ const HomePage = () => {
             Currently, I am :
             <ul>
               <li>Looking for a Co-op/Internship for Spring/Summer 2025</li>
-              <li>Looking for AI/ML Research Positions (Volunteer/Paid)</li>
+              <li> Working on a Self-Organizing Traffic Signal Control System for Smart Cities</li>
               <li>Learning about AI/ML and Computer Vision</li>
               <li>Attending Fall 2024 Classes</li>
               <li>Attending Hackathons @JHU, UPENN</li>

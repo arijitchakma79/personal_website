@@ -1,5 +1,11 @@
 [
     {
+      "name": "DenEyes (HopHacks 2024 Winner)",
+      "link": "https://devpost.com/software/deneyes",
+      "description": "DenEyes is an affordable robot built with a Raspberry Pi and simple electronics, designed to detect early signs of ADHD in children by using computer vision algorithms to track attention and engagement. Through reinforcement learning, the robot adapts its actions—such as calling the child’s name or making sounds—to maximize the child’s focus over time. It compiles this data into a detailed report, providing valuable insights for healthcare professionals to assist in early diagnosis and treatment. DenEyes offers an accessible solution for real-world attention monitoring and won 2nd Prize for General Overall and Most Philanthropic Hack - Bloomberg 3rd Prize.",
+      "image": "./deneyes.png"
+    },
+    {
       "name": "Visual-ED (DragonHacks 2024 Winner)",
       "link": "https://devpost.com/software/visual-ed",
       "description": "Visual-Ed is an interactive platform that helps individuals with mobility disabilities communicate and participate in classroom or conference settings using eye movement detection. It enables users to navigate a graphical interface, answer questions, and have their responses converted into speech for real-time interaction.",
@@ -7,7 +13,7 @@
     },
     {
       "name": "Scout (HoyaHacks 2024)",
-      "link": "https://devpost.com/software/scout-campus-security?ref_content=my-projects-tab&ref_feature=my_projects",
+      "link": "https://devpost.com/software/scout-campus-security",
       "description": "Scout is an affordable autonomous robot designed to enhance campus security by navigating the campus, detecting obstacles, and responding to the keyword 'help'. It sends location data to an app, providing real-time updates to support security teams and amplify their effectiveness.",
       "image": "./scout.png"
     },
